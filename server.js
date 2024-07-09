@@ -21,6 +21,16 @@ app.get('/',(req,res)=>{
 
 app.get('/form',(req,res)=>{
   res.sendFile(path.resolve(__dirname,'public/form.html'));
+});
+
+app.get('/multer',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,'public/loaders/multer.html'));
+})
+app.get('/busboy',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,'public/loaders/busboy.html'));
+});
+app.get('/express-file-upload',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,'public/loaders/express-fileupload.html'));
 })
 
 app.use( postRoutes)

@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 router.use(fileUpload());
-router.post('/upload', function(req, res) {
+router.post('/upload/express-file-upload', function(req, res) {
     if (!req.files || Object.keys(req.files).length === 0) {
         return res.status(400).send('No files were uploaded.');
     }

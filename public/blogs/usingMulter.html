@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using multer</title>
+    <link rel="stylesheet" href="./blogs.css">
+</head>
+<body>
+    <main>
+        <h2>Upload Files using Express and Multer</h2>
+        <article>
+            1. Create a new project folder <br>
+            2. open a new terminal in project folder <br>
+            3. initilize the project by running <code class="i-code">npm init -y</code> <br>
+            2. Run <code class="i-code">npm i express multer</code> to install the required dependencies <br>
+            3. Create a new javascript file called server.js <br>
+        </article>
+        <code class="block-code">
+            <i class="var-name"></i> 
+            <em class="kw"></em> 
+            <i class="assign"></i>
+            <i class="call-func"></i>
+            <i class="params"></i>
+            <i class="args"></i>
+            <i class="prefix"></i>
+            <i class="paranthesis"></i>
+            <i class="curly-braces"></i>
+            <i class="quote"></i>
+
+
+            <div>
+                <em class="kw">const</em> <i class="name">express</i> <i class="assign">=</i>
+                <span><i class="call-func">require</i><i class="paranthesis">(</i><i class="quote">"</i><i class="arg">express</i><i class="quote">"</i><i class="paranthesis">)</i> </span>
+            </div>
+            <div>
+                <em class="kw">const</em> <i class="name">multer</i> <i class="assign">=</i>
+                <span><i class="call-func">require</i><i class="paranthesis">(</i><i class="quote">"</i><i class="arg">multer</i><i class="quote">"</i><i class="paranthesis">)</i></span>
+            </div>
+            <div>
+                <em class="kw">const</em> <i class="name">upload</i> <i class="assign">=</i>
+                <span><i class="call-func">require</i><i class="paranthesis">(</i><i class="curly-braces">{</i><i class="key">key</i><i class="assign">:</i><i class="value">value</i><i class="curly-braces">}</i><i class="paranthesis">)</i></span>
+            </div>
+
+           
+            const express = require('express') <br>
+            const multer  = require('multer') <br>
+            const upload = multer({dest: 'uploads/'}) <br>
+            const app = express() <br>
+            app.post('/upload', upload.any(),(req, res, next)=> { <br>
+                // req.file will hold a single file<br>
+                // req.body will hold the text fields, if there were any <br>
+              }) <br>
+        </code>
+
+        &lt; <em class="kw">form</em> action="/stats" enctype="multipart/form-data" method="post"&gt; <br>
+         &nbsp; &lt;div class="form-group"&gt; <br>
+                &nbsp; &nbsp; &lt;input type="file" class="form-control-file" name="uploaded_file"&gt; <br>
+                &nbsp; &nbsp; &lt;input type="text" class="form-control" placeholder="Number of speakers" name="nspeakers"&gt; <br>
+                &nbsp; &nbsp; &lt;input type="submit" value="Get me the stats!" class="btn btn-default"&gt; <br>           
+          &nbsp; &lt;/div&gt; <br>
+        &lt;/form&gt; <br>
+
+
+
+    </main> 
+</body>
+</html>

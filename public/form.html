@@ -10,7 +10,8 @@
     <main class="upload-container">
         <section class="upload-sidebar"></section>
         <section class="upload-field">
-            <form action="/upload" class="form" method="post" enctype="multipart/form-data">
+            <form action="/upload/multer" class="form" method="post" enctype="multipart/form-data">
+                <div><h2 class="header-text">UPLOAD FILE TO EXPRESS JS BACKEND</h2></div> <hr>
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username">
@@ -24,6 +25,12 @@
                     <button type="submit">Upload</button>
                 </div>
                 <div class="message-box error">Message box</div>
+                <nav class="form-nav">
+                    <a href="/">Home</a>
+                    <a href="/multer">Multer</a>
+                    <a href="/busboy">Busboy</a>
+                    <a href="/express-file-upload">Express-Fileupload</a>
+                </nav>
             </form>
         </section>
     </main>   

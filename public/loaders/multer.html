@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload using multer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="upload-container">
+        <section class="upload-sidebar">
+        </section>
+        <section class="upload-field">
+            <form action="/upload/multer" class="form" method="post" enctype="multipart/form-data">
+                <div><h2 class="header-text">UPLOAD FILE USING EXPRESS & MULTER</h2></div> <hr>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="input-group">
+                    <label for="file">File</label>
+                    <input type="file" name="file" id="file">
+                </div>
+                <div class="button-group">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Upload</button>
+                </div>
+                <div class="message-box error">Message box</div>
+                <nav class="form-nav">
+                    <a href="/">Home</a>
+                    <a href="/busboy">Busboy</a>
+                    <a href="/express-file-upload">Express-Fileupload</a>
+                </nav>
+            </form>
+        </section>
+    </main>   
+</body>
+</html>

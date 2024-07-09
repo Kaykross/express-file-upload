@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: rgb(246, 246, 246); */
+    background-color: black;
+    padding: 0 50px;
+    height: 100vh;
+}
+main{
+
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+    height: 100%;
+    color: rgb(212, 212, 212);
+}
+
+.i-code{
+    /* background-color: white;
+    border: 1px solid gainsboro; */
+    padding: 0 5px;
+}
+
+.block-code{
+    display: block;
+    /* background-color: white;
+    border: 1px solid gainsboro; */
+    padding: 5px 5px;
+    margin: 5px 0;
+}
+
+.kw{
+    color: black;
+    font-weight: bolder;
+    /* font-style: normal; */
+    color: rgb(156, 193, 242);
+    color: rgb(254, 144, 54);
+}
+
+.name{
+    font-weight: bolder;
+    font-style: normal;
+    color: rgb(121, 176, 248);
+}
+.call-func{
+    font-weight: bolder;
+    /* font-style: normal; */
+    color: rgb(254, 144, 54);
+    color: rgb(254, 221, 54);
+    color: gainsboro;
+    color: rgb(253, 138, 45);
+}
+
+.paranthesis{
+    font-weight: bolder;
+    /* font-style: normal; */
+    color: rgb(247, 93, 209);
+}
+
+.arg, .quote{
+    font-weight: bolder;
+    /* font-style: normal; */
+    color: rgb(6, 215, 6);
+}
+
+.curly-braces{
+    font-weight: bolder;
+    /* font-style: normal; */
+    color: rgb(243, 9, 153);
+}
