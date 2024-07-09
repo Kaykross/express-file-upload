@@ -123,3 +123,11 @@ main.upload-container section.upload-field form.form .button-group button[type=s
     font-weight: bolder;
 
 }
+
+@media screen and (max-width: 700px) {
+    main.upload-container {
+        grid-template-columns: 100px 1fr;
+        height: 100%;
+        width: 100%;
+    }
+  }
